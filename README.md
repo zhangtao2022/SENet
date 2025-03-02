@@ -29,7 +29,7 @@ This repository contains the code for the paper: [Kernel Relative-prototype Spec
     ```
 4. Train shrinkage classifier using ResNet-12 on 5-way CIFAR-FS 1-shot benchmark:
     ```bash
-    python train.py --gpu 0 --save-path "./experiments/CIFAR_FS_shrinkage" --train-shot 15 --train-query 120\
+    python train.py --gpu 0 --save-path "./experiments/CIFAR_FS_shrinkage" --train-shot 15 --train-query 10\
     --head shrinkage --network ResNet --dataset CIFAR_FS
     ```
 
