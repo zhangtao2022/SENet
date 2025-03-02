@@ -1,15 +1,6 @@
 # Kernel Relative-prototype Spectral Filtering for Few-shot Learning
 
 This repository contains the code for the paper: [Kernel Relative-prototype Spectral Filtering for Few-shot Learning](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136800527.pdf)
-
-## Citation:
-@inproceedings{zhang2022kernel,\
-  title={Kernel Relative-prototype Spectral Filtering for Few-shot Learning},\
-  author={Zhang, Tao and Huang, Wu},\
-  booktitle={European Conference on Computer Vision},\
-  year={2022}\
-  organization={Springer}\
-}
  
 ## Dependencies:
 * Python 3.9.7
@@ -33,12 +24,12 @@ This repository contains the code for the paper: [Kernel Relative-prototype Spec
     ```
 3. Train shrinkage classifier using ResNet-12 on 5-way tieredImageNet  5-shot/1-shot benchmark:
     ```bash
-    python train.py --gpu 0,1,2,3 --save-path "./experiments/tieredImageNet_shrinkage" --train-shot 10 --train-query 15\
+    python train.py --gpu 0,1,2,3 --save-path "./experiments/tieredImageNet_shrinkage" --train-shot 15 --train-query 10\
     --head shrinkage --network ResNet --dataset tieredImageNet
     ```
 4. Train shrinkage classifier using ResNet-12 on 5-way CIFAR-FS 1-shot benchmark:
     ```bash
-    python train.py --gpu 0 --save-path "./experiments/CIFAR_FS_shrinkage" --train-shot 2 --train-query 20\
+    python train.py --gpu 0 --save-path "./experiments/CIFAR_FS_shrinkage" --train-shot 15 --train-query 120\
     --head shrinkage --network ResNet --dataset CIFAR_FS
     ```
 
